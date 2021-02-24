@@ -1,0 +1,144 @@
+.nav {
+  background-color: #000;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list li {
+  margin-right: 1rem;
+}
+
+.nav-list li a {
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
+.nav button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  padding: 0;
+}
+
+.main {
+  width: 60%;
+  min-width: 500px;
+  border: 1px solid #000;
+  padding: 20px;
+}
+
+.main button, .main a {
+  color: #000 !important;
+  background-color: #fff;
+  border: 1px solid #000;
+  padding: 10px 20px;
+}
+
+.dashboard .btns-wrp {
+  margin-bottom: 20px;
+}
+
+.dashboard .btns-wrp button {
+  width: 50%;
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #000;
+}
+
+button:disabled {
+  opacity: .5;
+}
+
+.dashboard .btns-wrp button:disabled {
+  background-color: #000;
+  color: #fff !important;
+  opacity: 1;
+}
+
+.questions-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.questions-list li:not(:last-child) {
+    margin-bottom: 15px;
+
+}
+
+.question {
+  border: 1px solid #000;
+  padding: 15px;
+}
+
+.user-info {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 20px;
+}
+.user-info img {
+  width: 70px;
+  height: 70px;
+  margin-right: 10px;
+}
+
+.question a, .question button {
+    
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    text-decoration: none !important;
+}
+
+.question-details input {
+    margin-right: 10px;
+}
+
+.answer .votes-percentage {
+  text-align: center;
+  padding: 10px;  
+}
+
+.new-question input{
+  border: 1px solid #000;
+  padding: 10px;
+  width: 100%;
+  box-shadow: none !important;
+  outline: none !important;
+}
+.leaderboard li {
+  border: 1px solid #000;
+}
+.leaderboard li:not(:last-child) {
+  margin-bottom: 15px;
+}
+.leaderboard li:nth-child(1) {
+  border-color: #C9B037;
+}
+.leaderboard li:nth-child(2) {
+  border-color: #B4B4B4;
+}
+.leaderboard li:nth-child(3) {
+  border-color: #6A3805;
+}
+
+.user-stats {
+  padding: 15px;
+}
+
+.login select {
+  border: 1px solid #000;
+  color: #000;
+  background-color: #fff;
+}
+
+
+
+
+
+
