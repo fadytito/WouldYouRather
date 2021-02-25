@@ -57,7 +57,10 @@ class App extends Component {
                 component={QuestionDetails}
                 isAuthed={authedUser}
               />
-              <Route component={PageNotFound} />
+              <ProtectedRoute                
+                component={PageNotFound}
+                isAuthed={authedUser}
+              />
             </Switch>
           </main>
         </div>

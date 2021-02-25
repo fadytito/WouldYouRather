@@ -17,12 +17,12 @@ class Login extends Component {
   handleSignIn = () => {
     this.props.dispatch(setAuthedUser(this.state.selectedUser));
     this.setState({redirect: true})
-
+    
   };
   render() {
-    const {usersIds, users} = this.props;
+    const {usersIds, users, pathname} = this.props;
     if(this.state.redirect) {
-      return <Redirect to="/"/>
+      return <Redirect to={pathname || '/'}/>
     }
     return (
       <div className="login text-center">
@@ -50,10 +50,12 @@ class Login extends Component {
   }
 }
 
-function mapStateToProps({ users }) {
+function mapStateToProps({ users }, {location}) {
+  const pathname = location.state.pathname
   return {
     usersIds: Object.keys(users),
     users,
+    pathname
   };
 }
 
